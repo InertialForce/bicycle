@@ -1,0 +1,3 @@
+@function calcNew($min, $max, $resolutionMin, $resolutionMax) {
+  @return calc($min + ($max - $min) * ((100vw - $resolutionMin) / ($resolutionMax - $resolutionMin)));
+}

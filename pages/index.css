@@ -1,0 +1,16 @@
+@import "../vendor/fonts.css";
+@import "../vendor/normalize.css";
+.page {
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: "Inter";
+  font-weight: 400;
+  background: #F4F4F4;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
