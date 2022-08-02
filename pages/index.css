@@ -3,14 +3,37 @@
 .page {
   max-width: 1440px;
   min-width: 320px;
+  min-height: 4300px;
   margin: 0 auto;
   font-family: "Inter";
   font-weight: 400;
   background: #F4F4F4;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background: #F4F4F4;
+}
+
 .nav {
   list-style: none;
-  padding: 0;
+  padding: 28px 120px;
   display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  gap: 34px;
+}
+.nav__link {
+  text-decoration: none;
+  color: #151515;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  transition: 0.2s linear;
+}
+.nav__link:hover {
+  opacity: 0.75;
 }
