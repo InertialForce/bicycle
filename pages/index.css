@@ -11,7 +11,8 @@
 }
 
 .header {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   right: 0;
   width: 100%;
@@ -36,4 +37,67 @@
 }
 .nav__link:hover {
   opacity: 0.75;
+}
+
+.main__about-site {
+  margin: 0 0 0 120px;
+}
+
+.about-site {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+.about-site__description {
+  max-width: 460px;
+}
+.about-site__title {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 60px;
+  margin: 80px 0 50px 0;
+  color: #151515;
+}
+.about-site__text {
+  color: #222222;
+  opacity: 0.7;
+  margin: 0 0 50px 0;
+}
+.about-site__button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 16px 10px;
+  min-width: 180px;
+  box-sizing: border-box;
+  background: #24B47E;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+.about-site__bike-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #151515;
+  margin: 167px 0 0;
+}
+.about-site__bike-name:after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 132px;
+  height: 2px;
+  vertical-align: middle;
+  background: #D7D4D4;
+  margin-left: 30px;
+}
+.about-site__image {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 630px;
+  max-height: 863px;
 }
