@@ -1,5 +1,21 @@
 @import "../vendor/fonts.css";
 @import "../vendor/normalize.css";
+.slider__text, .about-site__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #222222;
+  opacity: 0.7;
+}
+
+.slider__title, .about-site__title {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+  color: #151515;
+}
+
 .page {
   max-width: 1440px;
   min-width: 320px;
@@ -43,7 +59,10 @@
   margin: 0 0 0 120px;
 }
 .main__quot {
-  margin: 120px 120px 60px;
+  margin: 120px 120px 0;
+}
+.main__cover {
+  margin: 120px 0 0 120px;
 }
 
 .about-site {
@@ -55,21 +74,11 @@
   max-width: 460px;
 }
 .about-site__title {
-  font-weight: 700;
-  font-size: 55px;
-  line-height: 60px;
   margin: 80px 0 50px 0;
-  letter-spacing: -0.5px;
   max-width: 300px;
-  color: #151515;
 }
 .about-site__text {
-  color: #222222;
-  opacity: 0.7;
   margin: 0 0 50px 0;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
 }
 .about-site__button {
   font-weight: 600;
@@ -156,4 +165,41 @@
   color: #222222;
   opacity: 0.7;
   margin: 0;
+}
+
+.slider__title {
+  margin: 0 0 50px;
+}
+.slider__text {
+  max-width: 460px;
+  margin: 0 0 80px;
+}
+.slider__images {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+.slider__image {
+  max-width: 650px;
+  min-width: 650px;
+  max-height: 400px;
+}
+.slider__button {
+  background: #EBEBEB;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+.slider__button:hover {
+  opacity: 0.6;
+}
+.slider__button_type_next {
+  margin-left: 20px;
+  padding: 17px 20px 17px 23px;
+}
+.slider__button_type_prev {
+  padding: 17px 23px 17px 20px;
 }

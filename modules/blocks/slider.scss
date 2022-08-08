@@ -1,0 +1,47 @@
+.slider {
+  &__title {
+    margin: 0 0 50px;
+    @extend %title;
+  }
+
+  &__text {
+    max-width: 460px;
+    margin: 0 0 80px;
+    @extend %text;
+  }
+
+  &__images {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+
+  &__image {
+    max-width: 650px;
+    min-width: 650px;
+    max-height: 400px;
+  }
+
+  &__button {
+    background: #EBEBEB;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s linear;
+
+    &:hover {
+      opacity: .6;
+    }
+  }
+
+  &__button_type_next {
+    margin-left: 20px;
+    padding: 17px 20px 17px 23px;
+  }
+
+  &__button_type_prev {
+    padding: 17px 23px 17px 20px;
+  }
+}
