@@ -17,6 +17,7 @@
   right: 0;
   width: 100%;
   background: #F4F4F4;
+  z-index: 100;
 }
 
 .nav {
@@ -47,6 +48,7 @@
   display: flex;
   justify-content: space-between;
   height: 100vh;
+  position: relative;
 }
 .about-site__description {
   max-width: 460px;
@@ -56,12 +58,17 @@
   font-size: 55px;
   line-height: 60px;
   margin: 80px 0 50px 0;
+  letter-spacing: -0.5px;
+  max-width: 300px;
   color: #151515;
 }
 .about-site__text {
   color: #222222;
   opacity: 0.7;
   margin: 0 0 50px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
 }
 .about-site__button {
   font-weight: 600;
@@ -98,6 +105,17 @@
 .about-site__image {
   margin-top: 20px;
   width: 100%;
-  max-width: 630px;
-  max-height: 863px;
+  max-width: 610px;
+  max-height: 836px;
+}
+.about-site__bike-fix {
+  position: absolute;
+  top: 392px;
+  right: 370px;
+  width: 100%;
+  max-width: 340px;
+  padding: 20px 50px;
+  background: #F4F4F4;
+  filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.2));
+  border-radius: 20px;
 }

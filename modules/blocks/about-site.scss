@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   height: 100vh;
+  position: relative;
 
   &__description {
     max-width: 460px;
@@ -12,6 +13,8 @@
     font-size: 55px;
     line-height: 60px;
     margin: 80px 0 50px 0;
+    letter-spacing: -0.5px;
+    max-width: 300px;
     color: $primaryColor;
   }
 
@@ -19,6 +22,9 @@
     color: $secondaryColor;
     opacity: .7;
     margin: 0 0 50px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
   }
 
   &__button {
@@ -59,7 +65,19 @@
   &__image {
     margin-top: 20px;
     width: 100%;
-    max-width: 630px;
-    max-height: 863px;
+    max-width: 610px;
+    max-height: 836px;
+  }
+
+  &__bike-fix {
+    position: absolute;
+    top: 392px;
+    right: 370px;
+    width: 100%;
+    max-width: 340px;
+    padding: 20px 50px;
+    background: #F4F4F4;
+    filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.2));
+    border-radius: 20px;
   }
 }
