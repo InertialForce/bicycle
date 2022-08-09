@@ -1,0 +1,42 @@
+.bicycles {
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px;
+  }
+
+  &__title {
+    @extend %title;
+    margin: 0;
+  }
+
+  &__nav {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    cursor: pointer;
+    @extend %text;
+    transition: .2s linear;
+
+    &_active {
+      color: $primaryColor;
+      opacity: 1;
+      font-weight: 600;
+      transition: .2s linear;
+
+      &:hover {
+        opacity: .75;
+      }
+    }
+
+    &:hover {
+      opacity: .6;
+    }
+  }
+}
