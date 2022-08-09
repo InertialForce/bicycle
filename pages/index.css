@@ -1,6 +1,6 @@
 @import "../vendor/fonts.css";
 @import "../vendor/normalize.css";
-.slider__text, .about-site__text {
+.bicycles__item, .slider__text, .about-site__text {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -8,7 +8,7 @@
   opacity: 0.7;
 }
 
-.slider__title, .about-site__title {
+.bicycles__title, .slider__title, .about-site__title {
   font-weight: 700;
   font-size: 55px;
   line-height: 60px;
@@ -63,6 +63,9 @@
 }
 .main__cover {
   margin: 120px 0 0 120px;
+}
+.main__bicycles {
+  margin: 120px 120px 0;
 }
 
 .about-site {
@@ -202,4 +205,58 @@
 }
 .slider__button_type_prev {
   padding: 17px 23px 17px 20px;
+}
+
+.bicycles__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
+}
+.bicycles__title {
+  margin: 0;
+}
+.bicycles__nav {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+.bicycles__item {
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+.bicycles__item_active {
+  color: #151515;
+  opacity: 1;
+  font-weight: 600;
+  transition: 0.2s linear;
+}
+.bicycles__item_active:hover {
+  opacity: 0.75;
+}
+.bicycles__item:hover {
+  opacity: 0.6;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+.cards__image {
+  width: 100%;
+  max-width: 340px;
+  max-height: 340px;
+  filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
+  padding: 20px;
+  background: #F4F4F4;
+  border-radius: 20px;
+}
+.cards__text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #151515;
+  margin: 11px 0 0 6px;
 }
