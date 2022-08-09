@@ -12,9 +12,9 @@
 <body class="page">
   <header class="header">
     <ul class="nav">
-      <li><a class="nav__link" href="#">Покрытия и градиенты</a></li>
-      <li><a class="nav__link" href="#">Велосипеды</a></li>
-      <li><a class="nav__link" href="#">Тренировки</a></li>
+      <li><a class="nav__link" href="#cover">Покрытия и градиенты</a></li>
+      <li><a class="nav__link" href="#bicycles">Велосипеды</a></li>
+      <li><a class="nav__link" href="#workout">Тренировки</a></li>
     </ul>
   </header>
   <main class="main">
@@ -41,18 +41,34 @@
         </div>
       </div>
     </section>
-    <section class="cover main__cover">
+    <section class="cover main__cover" id="cover">
       <div class="slider">
-        <div class="slider__area">
-          <div class="slider__line">
-            <div class="slider__item">
-              <h2 class="slider__title">Шоссе</h2>
-              <p class="slider__text">На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то
-                горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</p>
-              <div class="slider__images">
-                <img class="slider__image" src="./images/slider-1.jpg" alt="">
-                <img class=" slider__image" src="./images/slider-2.jpg" alt="">
-              </div>
+        <div class="slider__block">
+          <div class="slider__item slider__item_active">
+            <h2 class="slider__title">Шоссе</h2>
+            <p class="slider__text">На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то
+              горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</p>
+            <div class="slider__images">
+              <img class="slider__image" src="./images/slider-1.jpg" alt="">
+              <img class=" slider__image" src="./images/slider-2.jpg" alt="">
+            </div>
+          </div>
+          <div class="slider__item">
+            <h2 class="slider__title">Грэвел</h2>
+            <p class="slider__text">Грэвел похож на шоссейный велосипед, но конструкция рамы немного отличается, и на
+              нём стоят более широкие покрышки, всё для того чтобы проехать по лёгкому бездорожью.</p>
+            <div class="slider__images">
+              <img class="slider__image" src="./images/slider-2.jpg" alt="">
+              <img class=" slider__image" src="./images/slider-3.jpg" alt="">
+            </div>
+          </div>
+          <div class="slider__item">
+            <h2 class="slider__title">ТТ</h2>
+            <p class="slider__text">ТТ — это велосипед для триатлона или раздельного старта, гооняют на таком велике
+              только по равнинному асфальту, велик очень быстрые и аэродинамичный.</p>
+            <div class="slider__images">
+              <img class="slider__image" src="./images/slider-3.jpg" alt="">
+              <img class=" slider__image" src="./images/slider-1.jpg" alt="">
             </div>
           </div>
         </div>
@@ -62,7 +78,7 @@
         </div>
       </div>
     </section>
-    <section class="bicycles main__bicycles">
+    <section class="bicycles main__bicycles" id="bicycles">
       <div class="bicycles__heading">
         <h2 class="bicycles__title">Велосипеды</h2>
         <ul class="bicycles__nav">
@@ -92,7 +108,7 @@
         </div>
       </div>
     </section>
-    <section class="workout main__workout">
+    <section class="workout main__workout" id="workout">
       <div class="workout__description">
         <div>
           <h2 class="workout__title">Тренировки</h2>
