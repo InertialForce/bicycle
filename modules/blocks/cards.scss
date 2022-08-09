@@ -1,6 +1,12 @@
 .cards {
-  display: flex;
-  justify-content: space-between;
+  &__items {
+    display: none;
+
+    &_active {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 
   &__item {
     text-decoration: none;

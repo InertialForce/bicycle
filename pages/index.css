@@ -241,13 +241,13 @@
 }
 .bicycles__item {
   cursor: pointer;
-  transition: 0.2s linear;
+  transition: opacity 0.2s linear;
 }
 .bicycles__item_active {
   color: #151515;
   opacity: 1;
   font-weight: 600;
-  transition: 0.2s linear;
+  transition: opacity 0.2s linear;
 }
 .bicycles__item_active:hover {
   opacity: 0.75;
@@ -256,7 +256,10 @@
   opacity: 0.6;
 }
 
-.cards {
+.cards__items {
+  display: none;
+}
+.cards__items_active {
   display: flex;
   justify-content: space-between;
 }

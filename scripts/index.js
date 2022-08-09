@@ -6,7 +6,7 @@ function slider() {
   let index = 0;
 
   const activeSlide = n => {
-    for (slide of slideItems) {
+    for (let slide of slideItems) {
       slide.classList.remove('slider__item_active');
     }
 
@@ -37,4 +37,40 @@ function slider() {
   prevBtn.addEventListener('click', prevSlide);
 }
 
+function sliderBike() {
+  const nameBicycle = document.querySelectorAll('.bicycles__item');
+  const itemCards = document.querySelectorAll('.cards__items');
+
+  let index = 0;
+
+  const activeItemCards = n => {
+    for (let item of itemCards) {
+      item.classList.remove('cards__items_active');
+    }
+
+    itemCards[n].classList.add('cards__items_active');
+  }
+
+  const activeNameBicycle = n => {
+    for (let name of nameBicycle) {
+      name.classList.remove('bicycles__item_active');
+    }
+
+    nameBicycle[n].classList.add('bicycles__item_active');
+  }
+
+  const prepareCurrentItem = ind => {
+    activeItemCards(ind);
+    activeNameBicycle(ind);
+  }
+
+  nameBicycle.forEach((item, indexItem) => {
+    item.addEventListener('click', () => {
+      index = indexItem;
+      prepareCurrentItem(index);
+    })
+  })
+}
+
 slider();
+sliderBike();
