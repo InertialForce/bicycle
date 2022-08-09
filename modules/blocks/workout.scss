@@ -1,0 +1,44 @@
+.workout {
+  display: flex;
+  justify-content: space-between;
+  gap: 160px;
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    @extend %title;
+    margin: 0;
+  }
+
+  &__text {
+    @extend %text;
+    margin: 50px 0 0 0;
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: $primaryColor;
+    text-decoration: none;
+    margin-right: 30px;
+    transition: .2s linear;
+
+    &:hover {
+      opacity: .75;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 580px;
+  }
+}
