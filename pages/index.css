@@ -124,8 +124,15 @@
   max-width: 610px;
   max-height: 836px;
 }
-.about-site__bike-fix {
+.about-site__block-fixed {
   position: absolute;
+  top: 347px;
+  right: 370px;
+  min-height: 430px;
+}
+.about-site__bike-fix {
+  position: -webkit-sticky;
+  position: sticky;
   top: 392px;
   right: 370px;
   width: 100%;

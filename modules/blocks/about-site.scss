@@ -62,15 +62,22 @@
     max-height: 836px;
   }
 
-  &__bike-fix {
+  &__block-fixed {
     position: absolute;
+    top: 347px;
+    right: 370px;
+    min-height: 430px;
+  }
+
+  &__bike-fix {
+    position: sticky;
     top: 392px;
     right: 370px;
     width: 100%;
     max-width: 340px;
     padding: 20px 50px;
     background: #F4F4F4;
-    filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(-20px 60px 220px #00000033);
     border-radius: 20px;
   }
 }
