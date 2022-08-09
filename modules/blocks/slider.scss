@@ -1,4 +1,13 @@
 .slider {
+
+  &__item {
+    display: none;
+
+    &_active {
+      display: block;
+    }
+  }
+
   &__title {
     margin: 0 0 50px;
     @extend %title;
