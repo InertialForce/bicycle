@@ -72,5 +72,16 @@ function sliderBike() {
   })
 }
 
+function switchTheme() {
+  const switchBtn = document.querySelector('.footer__switch-btn');
+  const page = document.querySelector('.page');
+
+  switchBtn.addEventListener('click', () => {
+    switchBtn.classList.toggle('footer__switch-btn_on');
+    page.classList.toggle('page_theme_dark');
+  })
+}
+
 slider();
 sliderBike();
+switchTheme();

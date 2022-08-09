@@ -24,6 +24,9 @@
   font-weight: 400;
   background: #F4F4F4;
 }
+.page_theme_dark {
+  background: #333333;
+}
 
 .header {
   position: -webkit-sticky;

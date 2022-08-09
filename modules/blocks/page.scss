@@ -5,4 +5,10 @@
   font-family: 'Inter';
   font-weight: 400;
   background: #F4F4F4;
+
+  &_theme{
+    &_dark {
+      background: $bgColorThemeDark;
+    }
+  }
 }
