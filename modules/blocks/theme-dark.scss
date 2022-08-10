@@ -1,0 +1,39 @@
+.theme-dark {
+  background: $bgColorThemeDark;
+
+  &__header {
+    background: #333333bd;
+  }
+
+  &__color-white {
+    color: $primaryColorThemeDark;
+  }
+
+  &__color-grey {
+    color: $secondaryColorThemeDark;
+  }
+
+  &__button {
+    background: #434343;
+  }
+
+  &__button-img {
+    filter: invert(1);
+  }
+
+  &__line {
+    border-color: #707070;
+  }
+
+  &__footer {
+    background: #2F2F2F;
+  }
+
+  &__switch-image {
+    filter: brightness(.5);
+  }
+
+  &__copyright {
+    color: #565656;
+  }
+}

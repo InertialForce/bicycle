@@ -42,17 +42,15 @@
     line-height: 18px;
     color: $primaryColor;
     margin: 167px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
 
-    &:after {
-      content: "";
-      position: relative;
-      display: inline-block;
-      width: 132px;
-      height: 2px;
-      vertical-align: middle;
-      background: #D7D4D4;
-      margin-left: 30px;
-    }
+  &__line {
+    min-width: 132px;
+    display: block;
+    border-top: 2px solid #D7D4D4;
   }
 
   &__image {

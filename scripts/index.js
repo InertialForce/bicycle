@@ -1,8 +1,21 @@
-function slider() {
-  const prevBtn = document.querySelector('.slider__button_type_prev');
-  const nextBtn = document.querySelector('.slider__button_type_next');
-  const slideItems = document.querySelectorAll('.slider__item');
+const nameBicycle = document.querySelectorAll('.bicycles__item');
+const itemCards = document.querySelectorAll('.cards__items');
+const prevBtn = document.querySelector('.slider__button_type_prev');
+const nextBtn = document.querySelector('.slider__button_type_next');
+const slideItems = document.querySelectorAll('.slider__item');
+const switchBtn = document.querySelector('.footer__switch-btn');
+const page = document.querySelector('.page');
+const header = document.querySelector('.header');
+const colorWhite = document.querySelectorAll('.color-white');
+const colorGrey = document.querySelectorAll('.color-grey');
+const sliderButtons = document.querySelectorAll('.slider__button');
+const sliderButtonsImg = document.querySelectorAll('.slider__button-img');
+const aboutSiteLine = document.querySelector('.about-site__line');
+const footer = document.querySelector('.footer');
+const switchImg = document.querySelectorAll('.footer__switch-image');
+const footerCopyright = document.querySelector('.footer__copyright');
 
+function slider() {
   let index = 0;
 
   const activeSlide = n => {
@@ -38,9 +51,6 @@ function slider() {
 }
 
 function sliderBike() {
-  const nameBicycle = document.querySelectorAll('.bicycles__item');
-  const itemCards = document.querySelectorAll('.cards__items');
-
   let index = 0;
 
   const activeItemCards = n => {
@@ -73,12 +83,32 @@ function sliderBike() {
 }
 
 function switchTheme() {
-  const switchBtn = document.querySelector('.footer__switch-btn');
-  const page = document.querySelector('.page');
-
   switchBtn.addEventListener('click', () => {
     switchBtn.classList.toggle('footer__switch-btn_on');
-    page.classList.toggle('page_theme_dark');
+    page.classList.toggle('theme-dark');
+    header.classList.toggle('theme-dark__header');
+    sliderButtons.forEach(item => {
+      item.classList.toggle('theme-dark__button');
+    });
+
+    colorWhite.forEach(item => {
+      item.classList.toggle('theme-dark__color-white');
+    });
+
+    colorGrey.forEach(item => {
+      item.classList.toggle('theme-dark__color-grey');
+    });
+
+    sliderButtonsImg.forEach(item => {
+      item.classList.toggle('theme-dark__button-img');
+    });
+
+    switchImg.forEach(item => {
+      item.classList.toggle('theme-dark__switch-image');
+    });
+    footerCopyright.classList.toggle('theme-dark__copyright');
+    aboutSiteLine.classList.toggle('theme-dark__line');
+    footer.classList.toggle('theme-dark__footer');
   })
 }
 

@@ -39,6 +39,8 @@
     border-radius: 50%;
     cursor: pointer;
     transition: .2s linear;
+    max-width: 50px;
+    max-height: 50px;
 
     &:hover {
       opacity: .6;
@@ -52,5 +54,9 @@
 
   &__button_type_prev {
     padding: 17px 23px 17px 20px;
+  }
+
+  &__button-img {
+    max-height: 16px;
   }
 }
