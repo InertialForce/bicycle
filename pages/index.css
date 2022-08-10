@@ -17,15 +17,12 @@
 }
 
 .page {
-  max-width: 1440px;
-  min-width: 320px;
-  margin: 0 auto;
   font-family: "Inter";
   font-weight: 400;
   background: #F4F4F4;
 }
 .page_theme_dark {
-  background: #333333;
+  background: #333;
 }
 
 .header {
@@ -36,6 +33,10 @@
   width: 100%;
   background: rgba(244, 244, 244, 0.7411764706);
   z-index: 100;
+}
+.header__container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .nav {
@@ -58,6 +59,11 @@
   opacity: 0.75;
 }
 
+.main {
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
+}
 .main__about-site {
   margin: 0 0 0 120px;
 }
@@ -327,10 +333,15 @@
 
 .footer {
   background: #EFEFEF;
+}
+.footer__container {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   padding: 80px 120px 60px;
+  margin: 0 auto;
+  max-width: 1440px;
+  min-width: 320px;
 }
 .footer__copyright {
   font-weight: 600;
