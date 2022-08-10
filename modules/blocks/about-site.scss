@@ -34,6 +34,28 @@
     border: none;
     cursor: pointer;
     color: #fff;
+    position: relative;
+
+    &::before {
+      content:'';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: #319E75;
+      border-radius: 4px;
+      transition: all 2s ease;
+    }
+
+    &:hover::before {
+      width: 100%;
+    }
+  }
+
+  &__button-text {
+    position: relative;
+    z-index: 20;
   }
 
   &__bike-name {

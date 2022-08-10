@@ -106,6 +106,25 @@
   border: none;
   cursor: pointer;
   color: #fff;
+  position: relative;
+}
+.about-site__button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #319E75;
+  border-radius: 4px;
+  transition: all 2s ease;
+}
+.about-site__button:hover::before {
+  width: 100%;
+}
+.about-site__button-text {
+  position: relative;
+  z-index: 20;
 }
 .about-site__bike-name {
   font-weight: 400;
@@ -342,6 +361,7 @@
   margin: 0 auto;
   max-width: 1440px;
   min-width: 320px;
+  box-sizing: border-box;
 }
 .footer__copyright {
   font-weight: 600;
