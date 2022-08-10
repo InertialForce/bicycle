@@ -5,4 +5,9 @@
   width: 100%;
   background: #f4f4f4bd;
   z-index: 100;
+
+  &__container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
