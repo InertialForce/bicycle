@@ -1,4 +1,8 @@
 .form {
+  &__send {
+    position: relative;
+  }
+
   &__title {
     font-weight: 600;
     font-size: 24px;
@@ -28,6 +32,23 @@
 
     &:hover{
       opacity: 1;
+    }
+  }
+
+  &__submit {
+    display: none;
+    border: 0;
+    background: 0;
+    color: $primaryColor;
+    cursor: pointer;
+    position: absolute;
+    top: 16px;
+    right: 22px;
+    z-index: 2;
+    padding: 0;
+
+    &_active {
+      display: block;
     }
   }
 }

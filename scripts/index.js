@@ -14,6 +14,8 @@ const aboutSiteLine = document.querySelector('.about-site__line');
 const footer = document.querySelector('.footer');
 const switchImg = document.querySelectorAll('.footer__switch-image');
 const footerCopyright = document.querySelector('.footer__copyright');
+const formEmail = document.querySelector('.form__email');
+const formSubmit = document.querySelector('.form__submit');
 
 function slider() {
   let index = 0;
@@ -112,6 +114,21 @@ function switchTheme() {
   })
 }
 
+function showBtn () {
+  formEmail.addEventListener('focus', () => {
+    formSubmit.classList.add('form__submit_active');
+    formEmail.placeholder = 'Ваш e-mail';
+  });
+
+  formSubmit.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    formSubmit.classList.remove('form__submit_active');
+    formEmail.placeholder = 'Круто!';
+    formEmail.value = '';
+  })
+}
+
 slider();
 sliderBike();
 switchTheme();
+showBtn();
