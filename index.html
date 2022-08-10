@@ -180,9 +180,12 @@
   <footer class="footer">
     <div class="footer__container">
       <div>
-        <form class="form footer__form" action="#">
+        <form class="form footer__form" action="#" target="_top">
           <h2 class="color-white form__title">Подпишитесь на рассылку —</h2>
-          <input class="color-white form__email" type="email" name="email" placeholder="Ваш e-mail">
+          <div class="form__send">
+            <input class="color-white form__email" type="email" name="email" placeholder="Ваш e-mail">
+            <input class="form__submit" type="submit" name="submit" value="ok">
+          </div>
         </form>
         <p class="footer__copyright">© Road Club 2021</p>
       </div>

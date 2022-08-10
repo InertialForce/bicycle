@@ -409,6 +409,9 @@
   left: 22px;
 }
 
+.form__send {
+  position: relative;
+}
 .form__title {
   font-weight: 600;
   font-size: 24px;
@@ -436,6 +439,21 @@
 }
 .form__email:hover {
   opacity: 1;
+}
+.form__submit {
+  display: none;
+  border: 0;
+  background: 0;
+  color: #151515;
+  cursor: pointer;
+  position: absolute;
+  top: 16px;
+  right: 22px;
+  z-index: 2;
+  padding: 0;
+}
+.form__submit_active {
+  display: block;
 }
 
 .theme-dark {
